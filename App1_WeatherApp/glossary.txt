@@ -1,0 +1,14 @@
+1. Class: blueprint, for example: GeoPoint
+2. Instance: is a object created by a Class. for example:tokyo = GeoPoint(latitude=35.7, longitude=139.7)
+3. Methods: a method is an entity that usually gets some inputs and returns output.
+4. Construtor: the __init__ function, for constructing the object Instance.
+5. Instance Methods: they are applied to instances. example: tokyo.get_closest()
+6. Class Methods: to be executed directly using the Class name. For exa: random()
+7. Parameters: self, longitude and latitude are parameters inside __init__.
+8. Argument: in the context of call, we call them rguments, in context of definition we call them parameters.
+9. Argument vals: assigned to the Argument.
+10. Attribute or member: anything that can be accessed using the . (dot) notation.
+
+
+-- Methods are inherited but not arguments of the parent class for INHERITANCE.
+
