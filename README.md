@@ -1,6 +1,6 @@
 # OOPs Projects and Notes
 
-### Non-linear differential equation solver
+### 1. Non-linear differential equation solver
 
 Given a Non-Linear differential Equation of the form: 
 A * d^2u/dx^2 + B * d^2u/dy^2 + C * du/dx + D * du/dy + E =0
@@ -21,7 +21,7 @@ Sample soln:
 ![qn2](https://user-images.githubusercontent.com/52539396/206736705-c246b083-03eb-446a-9c0f-31e4edc70800.png)
 
 
-## Weather App (App1)
+### 2. Weather App (App1)
 
 One can pass the latitude and longitude coordinates of a location and the program "antipode_2.py" generates a marker on the location which gives the weather update of the required location.
 
