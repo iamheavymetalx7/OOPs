@@ -4,8 +4,7 @@ from folium import Map, Marker, Popup
 from geopoint import GeoPoint
 
 
-locations =[[41,-1],[40,2],[39,5],[12.990,80.223]]
-
+locations =[[9.848217, 76.310602],[17.010942046954078, 78.03037453160432],[19.04981321096208, 72.8476459198551],[12.990,80.223]]
 
 mymap = Map(location=[12.990,80.223])
 
@@ -16,13 +15,13 @@ for loc in locations:
     forecast = geopoint.get_weather()
 
     popup_content= f"""
-    {forecast[0][0][-8:-6]}h: {round(forecast[0][1])}°F <img src="http://openweathermap.org/img/wn/{forecast[0][-1]}@2x.png" width=35>
+    {forecast[0][0][-8:-6]}h: {round(float(forecast[0][1]))}°F <img src="http://openweathermap.org/img/wn/{forecast[0][-1]}@2x.png" width=35>
     <hr>
-    {forecast[1][0][-8:-6]}h: {round(forecast[1][1])}°F <img src="http://openweathermap.org/img/wn/{forecast[1][-1]}@2x.png" width=35>
+    {forecast[1][0][-8:-6]}h: {round(float(forecast[1][1]))}°F <img src="http://openweathermap.org/img/wn/{forecast[1][-1]}@2x.png" width=35>
     <hr>
-    {forecast[2][0][-8:-6]}h: {round(forecast[2][1])}°F <img src="http://openweathermap.org/img/wn/{forecast[2][-1]}@2x.png" width=35>
+    {forecast[2][0][-8:-6]}h: {round(float(forecast[2][1]))}°F <img src="http://openweathermap.org/img/wn/{forecast[2][-1]}@2x.png" width=35>
     """
-    print(forecast)
+    ##print(forecast)
     popup =Popup(popup_content, max_width=400)
     popup.add_to(geopoint)
     geopoint.add_to(mymap)
