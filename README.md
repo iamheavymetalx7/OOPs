@@ -3,11 +3,7 @@
 ### 1. Non-linear differential equation solver
 
 Given a Non-Linear differential Equation of the form: 
-A * d^2u/dx^2 + B * d^2u/dy^2 + C * du/dx + D * du/dy + E =0
-
-where A,B,C,D,E are functions of x,y, and u on [a,b] x [c,d]
-
-with boundary conditions
+A * d^2u/dx^2 + B * d^2u/dy^2 + C * du/dx + D * du/dy + E =0 where A,B,C,D,E are functions of x,y, and u on [a,b] x [c,d] with boundary conditions
 
 u(a,y) = f1(y), u(b,y) = f2(y)
 u(x,c) = g1(x), u(x,d) = g2(x).
